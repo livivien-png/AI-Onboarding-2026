@@ -1,0 +1,51 @@
+Model: sentence-transformers/all-MiniLM-L6-v2 + sklearn LogisticRegression
+Data: trainingData.json
+Split: 85% train / 15% test; seed=42
+Rows: 1800
+Accuracy: 0.9889
+Macro-F1: 0.9885
+
+Per-intent classification report:
+                             precision    recall  f1-score   support
+
+               Add_waypoint       0.83      0.71      0.77         7
+              Complete_task       1.00      1.00      1.00         8
+            Delete_waypoint       0.88      0.88      0.88         8
+            Get_coordinates       0.89      1.00      0.94         8
+      Set_navigation_target       1.00      1.00      1.00         7
+                 close_menu       1.00      1.00      1.00         7
+         get_co2_production       1.00      1.00      1.00         8
+   get_coolant_gas_pressure       1.00      1.00      1.00         8
+get_coolant_liquid_pressure       1.00      1.00      1.00         7
+        get_coolant_storage       1.00      1.00      1.00         7
+       get_eva_elapsed_time       1.00      1.00      1.00         8
+            get_fan_pri_rpm       1.00      1.00      1.00         8
+            get_fan_sec_rpm       1.00      1.00      1.00         7
+             get_heart_rate       1.00      1.00      1.00         7
+    get_helmet_pressure_co2       1.00      1.00      1.00         8
+        get_oxy_consumption       1.00      1.00      1.00         7
+       get_oxy_pri_pressure       1.00      1.00      1.00         7
+        get_oxy_pri_storage       1.00      1.00      1.00         7
+       get_oxy_sec_pressure       1.00      1.00      1.00         8
+        get_oxy_sec_storage       1.00      1.00      1.00         7
+  get_primary_battery_level       1.00      1.00      1.00         8
+ get_scrubber_a_co2_storage       1.00      1.00      1.00         7
+ get_scrubber_b_co2_storage       1.00      1.00      1.00         8
+get_secondary_battery_level       1.00      1.00      1.00         8
+      get_suit_pressure_co2       1.00      1.00      1.00         8
+    get_suit_pressure_other       1.00      1.00      1.00         8
+      get_suit_pressure_oxy       1.00      1.00      1.00         7
+    get_suit_pressure_total       1.00      1.00      1.00         8
+            get_temperature       1.00      1.00      1.00         8
+               get_warnings       1.00      1.00      1.00         7
+       open_menu_navigation       1.00      1.00      1.00         7
+            open_menu_tasks       1.00      1.00      1.00         7
+              open_menu_uia       1.00      1.00      1.00         8
+           open_menu_vitals       1.00      1.00      1.00         8
+         reroute_navigation       1.00      1.00      1.00         7
+                  unhandled       1.00      1.00      1.00         7
+
+                   accuracy                           0.99       270
+                  macro avg       0.99      0.99      0.99       270
+               weighted avg       0.99      0.99      0.99       270
+

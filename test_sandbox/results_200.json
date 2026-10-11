@@ -1,0 +1,128 @@
+{
+  "test_file": "test_sandbox/test_inputs_200.json",
+  "test_rows": 200,
+  "intents": 36,
+  "exact_training_overlap": 0,
+  "ensemble": {
+    "accuracy": 0.895,
+    "correct": 179,
+    "macro_f1": 0.8967
+  },
+  "frozen_baseline": {
+    "accuracy": 0.895,
+    "macro_f1": 0.8967
+  },
+  "fine_tuned_encoder": {
+    "accuracy": 0.9,
+    "correct": 180,
+    "macro_f1": 0.9
+  },
+  "misclassified_count": 21,
+  "misclassifications": [
+    {
+      "text": "how much oxygen remains in tank one",
+      "expected": "get_oxy_pri_storage",
+      "predicted": "get_oxy_sec_storage"
+    },
+    {
+      "text": "what pressure is the main O2 tank holding",
+      "expected": "get_oxy_pri_pressure",
+      "predicted": "get_oxy_sec_pressure"
+    },
+    {
+      "text": "check pressure in the first oxygen tank",
+      "expected": "get_oxy_pri_pressure",
+      "predicted": "get_oxy_sec_pressure"
+    },
+    {
+      "text": "check partial pressure for gases besides oxygen and CO2",
+      "expected": "get_suit_pressure_other",
+      "predicted": "get_suit_pressure_co2"
+    },
+    {
+      "text": "read the backup fan revolutions",
+      "expected": "get_fan_sec_rpm",
+      "predicted": "get_fan_pri_rpm"
+    },
+    {
+      "text": "how much carbon dioxide has filter A collected",
+      "expected": "get_scrubber_a_co2_storage",
+      "predicted": "get_co2_production"
+    },
+    {
+      "text": "check the load in the left scrubber A",
+      "expected": "get_scrubber_a_co2_storage",
+      "predicted": "Complete_task"
+    },
+    {
+      "text": "read remaining energy in the first battery",
+      "expected": "get_primary_battery_level",
+      "predicted": "get_secondary_battery_level"
+    },
+    {
+      "text": "show me what jobs are still pending",
+      "expected": "open_menu_tasks",
+      "predicted": "Complete_task"
+    },
+    {
+      "text": "bring the suit interface panel forward",
+      "expected": "open_menu_uia",
+      "predicted": "open_menu_navigation"
+    },
+    {
+      "text": "back out of the current screen",
+      "expected": "close_menu",
+      "predicted": "open_menu_navigation"
+    },
+    {
+      "text": "avoid this blocked section and recalculate",
+      "expected": "reroute_navigation",
+      "predicted": "unhandled"
+    },
+    {
+      "text": "drop a new map pin at beacon seven",
+      "expected": "Add_waypoint",
+      "predicted": "Delete_waypoint"
+    },
+    {
+      "text": "take the crater edge waypoint off the route",
+      "expected": "Delete_waypoint",
+      "predicted": "Add_waypoint"
+    },
+    {
+      "text": "cross the rover wheel check off the list",
+      "expected": "Complete_task",
+      "predicted": "Set_navigation_target"
+    },
+    {
+      "text": "does the main oxygen supply have enough left for the return",
+      "expected": "get_oxy_pri_storage",
+      "predicted": "get_oxy_sec_storage"
+    },
+    {
+      "text": "how fast is the backup air fan spinning",
+      "expected": "get_fan_sec_rpm",
+      "predicted": "get_fan_pri_rpm"
+    },
+    {
+      "text": "bring up the EVA map with my location",
+      "expected": "open_menu_navigation",
+      "predicted": "Get_coordinates"
+    },
+    {
+      "text": "switch the visor to route guidance",
+      "expected": "open_menu_navigation",
+      "predicted": "reroute_navigation"
+    },
+    {
+      "text": "how much cooling liquid is left in the suit reservoir",
+      "expected": "get_coolant_storage",
+      "predicted": "get_temperature"
+    },
+    {
+      "text": "sorry I was just thinking out loud about the checklist",
+      "expected": "unhandled",
+      "predicted": "open_menu_tasks"
+    }
+  ]
+}

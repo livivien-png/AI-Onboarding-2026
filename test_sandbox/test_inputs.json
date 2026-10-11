@@ -1,0 +1,602 @@
+[
+  {
+    "text": "how much oxygen remains in tank one",
+    "intent": "get_oxy_pri_storage"
+  },
+  {
+    "text": "show me the reserve in the primary O2 bottle",
+    "intent": "get_oxy_pri_storage"
+  },
+  {
+    "text": "primary oxygen supply percentage please",
+    "intent": "get_oxy_pri_storage"
+  },
+  {
+    "text": "is the main oxygen tank getting low",
+    "intent": "get_oxy_pri_storage"
+  },
+  {
+    "text": "how much is left in oxygen tank two",
+    "intent": "get_oxy_sec_storage"
+  },
+  {
+    "text": "check the reserve for the backup O2 bottle",
+    "intent": "get_oxy_sec_storage"
+  },
+  {
+    "text": "secondary oxygen supply percentage",
+    "intent": "get_oxy_sec_storage"
+  },
+  {
+    "text": "is my second oxygen tank nearly empty",
+    "intent": "get_oxy_sec_storage"
+  },
+  {
+    "text": "backup oxygen reserve remaining",
+    "intent": "get_oxy_sec_storage"
+  },
+  {
+    "text": "how full is the second O2 supply tank",
+    "intent": "get_oxy_sec_storage"
+  },
+  {
+    "text": "what pressure is the main O2 tank holding",
+    "intent": "get_oxy_pri_pressure"
+  },
+  {
+    "text": "read the primary oxygen bottle pressure",
+    "intent": "get_oxy_pri_pressure"
+  },
+  {
+    "text": "how pressurized is oxygen tank one",
+    "intent": "get_oxy_pri_pressure"
+  },
+  {
+    "text": "check pressure in the first oxygen tank",
+    "intent": "get_oxy_pri_pressure"
+  },
+  {
+    "text": "what pressure is in the backup oxygen tank",
+    "intent": "get_oxy_sec_pressure"
+  },
+  {
+    "text": "read the secondary O2 bottle pressure",
+    "intent": "get_oxy_sec_pressure"
+  },
+  {
+    "text": "how pressurized is tank two",
+    "intent": "get_oxy_sec_pressure"
+  },
+  {
+    "text": "check the second oxygen tank pressure",
+    "intent": "get_oxy_sec_pressure"
+  },
+  {
+    "text": "pressure reading for the secondary oxygen supply",
+    "intent": "get_oxy_sec_pressure"
+  },
+  {
+    "text": "how many psi in oxygen bottle number two",
+    "intent": "get_oxy_sec_pressure"
+  },
+  {
+    "text": "how much oxygen pressure is inside the suit",
+    "intent": "get_suit_pressure_oxy"
+  },
+  {
+    "text": "read my suit oxygen partial pressure",
+    "intent": "get_suit_pressure_oxy"
+  },
+  {
+    "text": "what's the O2 partial pressure in my suit",
+    "intent": "get_suit_pressure_oxy"
+  },
+  {
+    "text": "check the oxygen component of suit pressure",
+    "intent": "get_suit_pressure_oxy"
+  },
+  {
+    "text": "how much CO2 pressure is in the suit",
+    "intent": "get_suit_pressure_co2"
+  },
+  {
+    "text": "read the carbon dioxide partial pressure in my suit",
+    "intent": "get_suit_pressure_co2"
+  },
+  {
+    "text": "what's my suit CO2 partial pressure",
+    "intent": "get_suit_pressure_co2"
+  },
+  {
+    "text": "check the carbon dioxide part of suit pressure",
+    "intent": "get_suit_pressure_co2"
+  },
+  {
+    "text": "how much trace gas pressure is in the suit",
+    "intent": "get_suit_pressure_other"
+  },
+  {
+    "text": "read the pressure from other gases in my suit",
+    "intent": "get_suit_pressure_other"
+  },
+  {
+    "text": "what's the suit trace gas reading",
+    "intent": "get_suit_pressure_other"
+  },
+  {
+    "text": "check partial pressure for gases besides oxygen and CO2",
+    "intent": "get_suit_pressure_other"
+  },
+  {
+    "text": "what pressure is the whole suit at",
+    "intent": "get_suit_pressure_total"
+  },
+  {
+    "text": "read my overall suit pressure",
+    "intent": "get_suit_pressure_total"
+  },
+  {
+    "text": "how much total pressure is inside the suit",
+    "intent": "get_suit_pressure_total"
+  },
+  {
+    "text": "give me the combined pressure reading for my suit",
+    "intent": "get_suit_pressure_total"
+  },
+  {
+    "text": "what's the CO2 pressure up in my helmet",
+    "intent": "get_helmet_pressure_co2"
+  },
+  {
+    "text": "read carbon dioxide pressure at the helmet",
+    "intent": "get_helmet_pressure_co2"
+  },
+  {
+    "text": "check the helmet carbon dioxide reading",
+    "intent": "get_helmet_pressure_co2"
+  },
+  {
+    "text": "how much carbon dioxide pressure is in the helmet",
+    "intent": "get_helmet_pressure_co2"
+  },
+  {
+    "text": "how fast is circulation fan A turning",
+    "intent": "get_fan_pri_rpm"
+  },
+  {
+    "text": "read the primary fan revolutions",
+    "intent": "get_fan_pri_rpm"
+  },
+  {
+    "text": "what speed is the main ventilation fan at",
+    "intent": "get_fan_pri_rpm"
+  },
+  {
+    "text": "give me the RPM for the first fan",
+    "intent": "get_fan_pri_rpm"
+  },
+  {
+    "text": "how fast is circulation fan B turning",
+    "intent": "get_fan_sec_rpm"
+  },
+  {
+    "text": "read the backup fan revolutions",
+    "intent": "get_fan_sec_rpm"
+  },
+  {
+    "text": "what speed is the secondary ventilation fan at",
+    "intent": "get_fan_sec_rpm"
+  },
+  {
+    "text": "give me RPM for the second fan",
+    "intent": "get_fan_sec_rpm"
+  },
+  {
+    "text": "how full is carbon scrubber A",
+    "intent": "get_scrubber_a_co2_storage"
+  },
+  {
+    "text": "read the remaining capacity on CO2 scrubber A",
+    "intent": "get_scrubber_a_co2_storage"
+  },
+  {
+    "text": "how much carbon dioxide has filter A collected",
+    "intent": "get_scrubber_a_co2_storage"
+  },
+  {
+    "text": "check the load in the left scrubber A",
+    "intent": "get_scrubber_a_co2_storage"
+  },
+  {
+    "text": "how full is carbon scrubber B",
+    "intent": "get_scrubber_b_co2_storage"
+  },
+  {
+    "text": "read the remaining capacity on CO2 scrubber B",
+    "intent": "get_scrubber_b_co2_storage"
+  },
+  {
+    "text": "how much carbon dioxide has filter B collected",
+    "intent": "get_scrubber_b_co2_storage"
+  },
+  {
+    "text": "check the load in scrubber B on the right",
+    "intent": "get_scrubber_b_co2_storage"
+  },
+  {
+    "text": "what temperature am I running inside the suit",
+    "intent": "get_temperature"
+  },
+  {
+    "text": "is my suit interior warm or cool",
+    "intent": "get_temperature"
+  },
+  {
+    "text": "give me the temperature in the suit",
+    "intent": "get_temperature"
+  },
+  {
+    "text": "how hot is it inside my EVA suit",
+    "intent": "get_temperature"
+  },
+  {
+    "text": "how much coolant is still in the reservoir",
+    "intent": "get_coolant_storage"
+  },
+  {
+    "text": "show remaining coolant supply",
+    "intent": "get_coolant_storage"
+  },
+  {
+    "text": "is the cooling fluid tank low",
+    "intent": "get_coolant_storage"
+  },
+  {
+    "text": "what percentage of coolant do I have left",
+    "intent": "get_coolant_storage"
+  },
+  {
+    "text": "what pressure is the coolant gas circuit at",
+    "intent": "get_coolant_gas_pressure"
+  },
+  {
+    "text": "check the vapor side of the cooling loop",
+    "intent": "get_coolant_gas_pressure"
+  },
+  {
+    "text": "read gas loop pressure for coolant",
+    "intent": "get_coolant_gas_pressure"
+  },
+  {
+    "text": "how's pressure in the gaseous coolant line",
+    "intent": "get_coolant_gas_pressure"
+  },
+  {
+    "text": "what pressure is the liquid coolant circuit at",
+    "intent": "get_coolant_liquid_pressure"
+  },
+  {
+    "text": "check the fluid side of the cooling loop",
+    "intent": "get_coolant_liquid_pressure"
+  },
+  {
+    "text": "read liquid loop pressure for coolant",
+    "intent": "get_coolant_liquid_pressure"
+  },
+  {
+    "text": "how's pressure in the liquid coolant line",
+    "intent": "get_coolant_liquid_pressure"
+  },
+  {
+    "text": "how fast is my pulse right now",
+    "intent": "get_heart_rate"
+  },
+  {
+    "text": "read my beats per minute",
+    "intent": "get_heart_rate"
+  },
+  {
+    "text": "what's my current heartbeat",
+    "intent": "get_heart_rate"
+  },
+  {
+    "text": "can I get a pulse check",
+    "intent": "get_heart_rate"
+  },
+  {
+    "text": "what rate am I using oxygen at",
+    "intent": "get_oxy_consumption"
+  },
+  {
+    "text": "how much O2 do I breathe per minute",
+    "intent": "get_oxy_consumption"
+  },
+  {
+    "text": "show my oxygen draw over time",
+    "intent": "get_oxy_consumption"
+  },
+  {
+    "text": "check how quickly we're burning through oxygen",
+    "intent": "get_oxy_consumption"
+  },
+  {
+    "text": "how quickly am I exhaling carbon dioxide",
+    "intent": "get_co2_production"
+  },
+  {
+    "text": "what rate is CO2 building up from me",
+    "intent": "get_co2_production"
+  },
+  {
+    "text": "show my carbon dioxide output",
+    "intent": "get_co2_production"
+  },
+  {
+    "text": "check the rate I'm producing CO2",
+    "intent": "get_co2_production"
+  },
+  {
+    "text": "how long have I been outside the vehicle",
+    "intent": "get_eva_elapsed_time"
+  },
+  {
+    "text": "what's the time on this spacewalk so far",
+    "intent": "get_eva_elapsed_time"
+  },
+  {
+    "text": "how many minutes into the EVA are we",
+    "intent": "get_eva_elapsed_time"
+  },
+  {
+    "text": "show elapsed time since we started the excursion",
+    "intent": "get_eva_elapsed_time"
+  },
+  {
+    "text": "how much charge is left in battery one",
+    "intent": "get_primary_battery_level"
+  },
+  {
+    "text": "show the power percentage for the main battery",
+    "intent": "get_primary_battery_level"
+  },
+  {
+    "text": "is the primary power pack running low",
+    "intent": "get_primary_battery_level"
+  },
+  {
+    "text": "read remaining energy in the first battery",
+    "intent": "get_primary_battery_level"
+  },
+  {
+    "text": "how much charge is left in battery two",
+    "intent": "get_secondary_battery_level"
+  },
+  {
+    "text": "show the power percentage for the backup battery",
+    "intent": "get_secondary_battery_level"
+  },
+  {
+    "text": "is the secondary power pack running low",
+    "intent": "get_secondary_battery_level"
+  },
+  {
+    "text": "read remaining energy in the second battery",
+    "intent": "get_secondary_battery_level"
+  },
+  {
+    "text": "anything on the suit alert list",
+    "intent": "get_warnings"
+  },
+  {
+    "text": "read out every active EVA alarm",
+    "intent": "get_warnings"
+  },
+  {
+    "text": "what's the current warning situation",
+    "intent": "get_warnings"
+  },
+  {
+    "text": "do I have any active alerts right now",
+    "intent": "get_warnings"
+  },
+  {
+    "text": "put my health readings up",
+    "intent": "open_menu_vitals"
+  },
+  {
+    "text": "switch the display over to vitals",
+    "intent": "open_menu_vitals"
+  },
+  {
+    "text": "I need the life signs page",
+    "intent": "open_menu_vitals"
+  },
+  {
+    "text": "bring the crew health panel forward",
+    "intent": "open_menu_vitals"
+  },
+  {
+    "text": "show the route map on my display",
+    "intent": "open_menu_navigation"
+  },
+  {
+    "text": "switch over to the map view",
+    "intent": "open_menu_navigation"
+  },
+  {
+    "text": "bring up my navigation screen",
+    "intent": "open_menu_navigation"
+  },
+  {
+    "text": "I need the directions panel open",
+    "intent": "open_menu_navigation"
+  },
+  {
+    "text": "put the mission checklist on screen",
+    "intent": "open_menu_tasks"
+  },
+  {
+    "text": "switch the HUD to my task list",
+    "intent": "open_menu_tasks"
+  },
+  {
+    "text": "bring up the work items page",
+    "intent": "open_menu_tasks"
+  },
+  {
+    "text": "show me what jobs are still pending",
+    "intent": "open_menu_tasks"
+  },
+  {
+    "text": "open the airlock controls display",
+    "intent": "open_menu_uia"
+  },
+  {
+    "text": "put up the UIA interface",
+    "intent": "open_menu_uia"
+  },
+  {
+    "text": "switch to the airlock connection page",
+    "intent": "open_menu_uia"
+  },
+  {
+    "text": "bring the suit interface panel forward",
+    "intent": "open_menu_uia"
+  },
+  {
+    "text": "dismiss whatever HUD window is open",
+    "intent": "close_menu"
+  },
+  {
+    "text": "get this display out of my way",
+    "intent": "close_menu"
+  },
+  {
+    "text": "hide the panel I'm looking at",
+    "intent": "close_menu"
+  },
+  {
+    "text": "back out of the current screen",
+    "intent": "close_menu"
+  },
+  {
+    "text": "give me the map position of eagle crater",
+    "intent": "Get_coordinates"
+  },
+  {
+    "text": "where are we marking the lander",
+    "intent": "Get_coordinates"
+  },
+  {
+    "text": "look up the location for beacon seven",
+    "intent": "Get_coordinates"
+  },
+  {
+    "text": "what are the coordinates at the north depot",
+    "intent": "Get_coordinates"
+  },
+  {
+    "text": "I need the latitude and longitude for beacon seven",
+    "intent": "Get_coordinates"
+  },
+  {
+    "text": "make beacon seven the place I'm heading for",
+    "intent": "Set_navigation_target"
+  },
+  {
+    "text": "set my destination to eagle crater",
+    "intent": "Set_navigation_target"
+  },
+  {
+    "text": "guide me over to the north depot",
+    "intent": "Set_navigation_target"
+  },
+  {
+    "text": "I want the lander as my navigation goal",
+    "intent": "Set_navigation_target"
+  },
+  {
+    "text": "route me to the north depot as my destination",
+    "intent": "Set_navigation_target"
+  },
+  {
+    "text": "avoid this blocked section and recalculate",
+    "intent": "reroute_navigation"
+  },
+  {
+    "text": "choose a different way to reach my destination",
+    "intent": "reroute_navigation"
+  },
+  {
+    "text": "navigation needs a fresh route around the rocks",
+    "intent": "reroute_navigation"
+  },
+  {
+    "text": "replan my path from where I am",
+    "intent": "reroute_navigation"
+  },
+  {
+    "text": "save this spot as a waypoint called ridge marker",
+    "intent": "Add_waypoint"
+  },
+  {
+    "text": "drop a new map pin at beacon seven",
+    "intent": "Add_waypoint"
+  },
+  {
+    "text": "add the crater edge to my saved locations",
+    "intent": "Add_waypoint"
+  },
+  {
+    "text": "mark this place for later on the route map",
+    "intent": "Add_waypoint"
+  },
+  {
+    "text": "remove ridge marker from my saved locations",
+    "intent": "Delete_waypoint"
+  },
+  {
+    "text": "erase the map pin named beacon seven",
+    "intent": "Delete_waypoint"
+  },
+  {
+    "text": "take the crater edge waypoint off the route",
+    "intent": "Delete_waypoint"
+  },
+  {
+    "text": "clear that saved place from navigation",
+    "intent": "Delete_waypoint"
+  },
+  {
+    "text": "log the tether inspection as finished",
+    "intent": "Complete_task"
+  },
+  {
+    "text": "mark soil collection done on the checklist",
+    "intent": "Complete_task"
+  },
+  {
+    "text": "I sealed the airlock mark that job complete",
+    "intent": "Complete_task"
+  },
+  {
+    "text": "cross the rover wheel check off the list",
+    "intent": "Complete_task"
+  },
+  {
+    "text": "man I could go for a cheeseburger",
+    "intent": "unhandled"
+  },
+  {
+    "text": "that radio crackle sounds funny",
+    "intent": "unhandled"
+  },
+  {
+    "text": "thanks a bunch I appreciate it",
+    "intent": "unhandled"
+  },
+  {
+    "text": "I wonder what the kids are up to today",
+    "intent": "unhandled"
+  }
+]
